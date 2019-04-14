@@ -4,7 +4,8 @@
 
 ### exhibition_pipeline.py
 
-`python3 exhibition_pipeline.py --help
+```
+python3 exhibition_pipeline.py --help
 usage: exhibition_pipeline.py [-h] [-wd CAMERA_WIDTH] [-ht CAMERA_HEIGHT]
                               [-numncs NUMBER_OF_NCS] [-vidfps FPS_OF_VIDEO]
                               [-skpfrm NUMBER_OF_FRAME_SKIP] [-o OUTPUT_FILE]
@@ -35,7 +36,8 @@ optional arguments:
                         Enabled; 0 - Disabled)
   -fa FACE_ANALYSIS_ENABLED, --face-analysis FACE_ANALYSIS_ENABLED
                         Enable Face Analysis. Default=1 (1 - Enabled; 0 -
-                        Disabled)`
+                        Disabled)
+ ```
                         
 On each frame, person and face detection is performed, using [face-person-detection-retail-0002 model](https://github.com/opencv/open_model_zoo/blob/master/intel_models/face-person-detection-retail-0002/description/face-person-detection-retail-0002.md)
 Upon detecting people's bodies and faces, the body and face rectangles are passed to models to recognize age, gender, head pose, and emotions and perform person re-identification.
